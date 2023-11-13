@@ -14,7 +14,7 @@ public class MealPlannerService {
 
     public Order placeOrder(Order order) {
 
-        if (order.getOrderId() == null || order.getOrderId().isEmpty()) {
+        if (order.getOrderId() == null) {
             throw new IllegalArgumentException("OrderId darf nicht leer sein");
         }
 
